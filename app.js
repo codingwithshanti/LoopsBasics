@@ -1,16 +1,48 @@
 /* Done in wednesday class:
 1. What is a loop?
+A function that repeats.
 
 2. What is the syntax of a loop?
-for(i = 0; i < 5; i++){
-
+for(initializing, terminating, incrementing){
+    //tasks to be repeated
 }
-initializing
-terminating
-incrementing
+
+initializing = start at?, ex. var i = 0
+terminating = end at?, ex. i > 10
+incrementing = how often/periods, intervals in between, ex. i = i + 1
+
+i = i + 1
+shortcut: i++
+i = i + 2
+shortcut: i+=2
+i = i + 3
+shortcut: i+=3
+
+for(i = 0; i < 5; i++){
+    console.log("I am smart.");
+    var i = i+2;
+}
+
+1- I am smart. i = 0
+2- I am smart. i = 1
+3- I am smart. i = 3
+4- I am smart. i = 4
+5- I am smart. i = 4
+6 -- i  = 5 X
 
 3. Give a few examples.
 */
+
+//Create a loop that prints "HTA rocks." 3 times
+
+for(var i = 0; i<3; i++){
+    console.log("HTA rocks." + i);
+}
+
+//Create a loop that prints even numbers.
+for(i = 0; i<10; i+=2){
+    console.log(i);
+}
 
 //4. Create a loop that prints numbers from 0-10.
 
